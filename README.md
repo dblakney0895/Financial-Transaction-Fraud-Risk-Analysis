@@ -97,7 +97,7 @@ Fraud detection systems must balance:
 ![Transaction Amount Distribution](screenshots/TAD.png)
 
 ### Confusion Matrix (Threshold = 40)
-![Confusion Matrix](screenshots/confusion_matrix.png)
+![Confusion Matrix](screenshots/confusion.png)
 
 ## Author
 David Blakney  
