@@ -88,6 +88,16 @@ Fraud detection systems must balance:
 - Fairness and bias considerations
 
 ---
+## Visual Results
+
+### Class Distribution
+![Class Distribution](screenshots/class_distribution.png)
+
+### Transaction Amount Distribution
+![Transaction Amount Distribution](screenshots/TAD.png)
+
+### Confusion Matrix (Threshold = 40)
+![Confusion Matrix](screenshots/confusion_matrix.png)
 
 ## Author
 David Blakney  
