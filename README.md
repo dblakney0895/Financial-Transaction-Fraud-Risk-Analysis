@@ -1,31 +1,95 @@
 # Financial Transaction Fraud Risk Analysis
-### Fraud Pattern Exploration, Risk Indicators, and Ethical Considerations
 
-## Business Context
-Financial organizations face ongoing fraud risk that can lead to direct loss, reputational harm, and regulatory exposure. This project analyzes transaction-level data to identify risk indicators and patterns associated with fraudulent activity.
+## Overview
+This project simulates financial transaction data to analyze fraud patterns and evaluate a rule-based fraud risk scoring model. The objective is to demonstrate practical fraud analytics, model evaluation, and business tradeoff analysis.
 
-## Objective
-- Explore fraud prevalence and key patterns
-- Identify transaction features associated with higher risk
-- Create a simple, explainable risk scoring approach (baseline)
-- Document ethical and compliance considerations for fraud analytics
+---
 
-## Tools Used
-- Python (Pandas, NumPy, Matplotlib)
-- Jupyter Notebook
-- Exploratory Data Analysis (EDA)
-- Descriptive Statistics
+## Business Problem
+Financial institutions face ongoing fraud risk that can lead to:
 
-## Repository Structure
-- `datasets/` — data files (synthetic or public)
-- `notebooks/` — analysis notebooks
-- `screenshots/` — exported charts/visuals
-- `executive_summary.md` — concise summary for non-technical readers
+- Direct financial losses  
+- Regulatory penalties  
+- Reputational damage  
+- Customer experience friction  
 
-## Key Outputs
-- EDA + visualizations (fraud rate, amount distribution, correlations)
-- Risk indicators and interpretive findings
-- Baseline risk scoring logic (transparent, non-ML)
+This project explores how fraud detection thresholds impact operational outcomes.
 
-## Notes
-This repository uses **synthetic or public data** only. No proprietary or sensitive information is included.
+---
+
+## Dataset
+Synthetic transaction dataset (15,000 records) including:
+
+- Transaction amount
+- Hour of transaction
+- International indicator
+- Card-present indicator
+- Merchant risk score
+- Account age
+- Transaction count (24h)
+- Fraud label (simulated)
+
+Fraud rate: ~1% (realistic class imbalance)
+
+---
+
+## Methodology
+
+### 1. Data Simulation
+Generated synthetic financial transaction dataset with risk-weighted fraud probability.
+
+### 2. Exploratory Data Analysis
+- Class imbalance analysis
+- Transaction amount distribution
+- Fraud behavior comparison
+
+### 3. Rule-Based Risk Scoring
+Built an explainable scoring model using weighted risk indicators.
+
+### 4. Threshold Analysis
+Evaluated performance at multiple thresholds:
+- Threshold 60 → High precision, low recall
+- Threshold 40 → Higher recall, more false positives
+
+### 5. Confusion Matrix Evaluation
+Visualized model performance and analyzed:
+- True Positives
+- False Positives
+- False Negatives
+
+---
+
+## Key Insights
+
+- Fraud detection is a precision-recall tradeoff problem
+- Lower thresholds increase fraud detection but increase customer friction
+- Optimal threshold depends on risk tolerance and regulatory requirements
+- Class imbalance significantly impacts fraud modeling performance
+
+---
+
+## Skills Demonstrated
+
+- Python (Pandas, NumPy, Matplotlib, Seaborn)
+- Feature engineering
+- Rule-based modeling
+- Threshold tuning
+- Confusion matrix analysis
+- Business interpretation of model results
+
+---
+
+## Ethical Considerations
+
+Fraud detection systems must balance:
+- Customer experience
+- Regulatory compliance
+- Financial risk exposure
+- Fairness and bias considerations
+
+---
+
+## Author
+David Blakney  
+Data Analytics | Fraud Risk | Business Intelligence
+
